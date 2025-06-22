@@ -11,6 +11,15 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.8"
+dependencies = [
+    "click"
+]
 
 [project.scripts]
 chatcat = "chatcat.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
